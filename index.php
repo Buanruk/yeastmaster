@@ -219,6 +219,8 @@ $result = mysqli_query($conn, $query);
             border-radius: 0; /* ไม่ให้รูปมีมุมโค้ง */
         }
 
+        
+
     </style>
 </head>
 <body>
@@ -247,6 +249,7 @@ $result = mysqli_query($conn, $query);
         <a href="product-details-plant.php">อาหารเสริมสำหรับพืช</a>
         <a href="product-details-livestock.php">อาหารเสริมสำหรับสัตว์บก</a>
         <a href="cart.php">ตะกร้าสินค้า</a>
+        <a href="checkout.php">ชำระเงิน</a>
     </div>
 
     <section class="products-section">

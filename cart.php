@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>ตะกร้าสินค้า | Yeast Master</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             background-color: #f8f8f8;
             margin: 0;
@@ -44,6 +44,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         h1 {
             text-align: center;
+            font-size: 2rem;
+            color: #333;
         }
         table {
             width: 100%;
@@ -91,15 +93,52 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             justify-content: space-between;
             padding: 10px 0;
         }
+        /* การตกแต่งปุ่ม */
+        button, a {
+            background-color: #004D40;
+            color: white;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 10px;
+        }
+
+        button:hover, a:hover {
+            background-color: #00897B;
+            transform: translateY(-2px);
+        }
+
+        button:focus, a:focus {
+            outline: none;
+        }
+
+        /* ปุ่ม "ชำระเงิน" */
         .checkout-btn {
             background: green;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 12px 25px;
             display: block;
-            border-radius: 5px;
+            border-radius: 50px;
             text-decoration: none;
             margin-top: 10px;
+            font-size: 1.1rem;
+            width: 100%;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .checkout-btn:hover {
+            background-color: #00796b;
+            transform: translateY(-2px);
+        }
+
+        .checkout-btn:focus {
+            outline: none;
         }
         header {
     position: relative;
@@ -560,6 +599,7 @@ header h1 {
         <a href="product-details-plant.php">อาหารเสริมสำหรับพืช</a>
         <a href="product-details-livestock.php">อาหารเสริมสำหรับสัตว์บก</a>
         <a href="cart.php">ตะกร้าสินค้า</a>
+        <a href="checkout.php">ชำระเงิน</a>
     </div>
 
 </head>
@@ -570,7 +610,7 @@ header h1 {
     </button>
 
     <video autoplay muted loop class="background-video">
-    <source src="videos/w.mp4" type="video/mp4">
+    <source src="videos/cart.mp4" type="video/mp4">
     </video>
 
     <div class="header-buttons">

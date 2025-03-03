@@ -44,6 +44,119 @@ $result = mysqli_query($conn, $query);
     z-index: -1;
 }
 
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .cart-img {
+            width: 80px;
+            border-radius: 5px;
+        }
+        .quantity {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .quantity input {
+            width: 50px;
+            text-align: center;
+            font-size: 16px;
+            margin: 0 10px;
+        }
+        .remove-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: red;
+            font-size: 18px;
+        }
+        .summary {
+            background: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .summary div {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+        /* การตกแต่งปุ่ม */
+        button, a {
+            background-color: #004D40;
+            color: white;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 10px;
+        }
+
+        button:hover, a:hover {
+            background-color: #00897B;
+            transform: translateY(-2px);
+        }
+
+        button:focus, a:focus {
+            outline: none;
+        }
+
+        /* ปุ่ม "ชำระเงิน" */
+        .checkout-btn {
+            background: green;
+            color: white;
+            text-align: center;
+            padding: 12px 25px;
+            display: block;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 10px;
+            font-size: 1.1rem;
+            width: 100%;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .checkout-btn:hover {
+            background-color: #00796b;
+            transform: translateY(-2px);
+        }
+
+        .checkout-btn:focus {
+            outline: none;
+        }
+
 .header-text {
     position: relative;
     z-index: 1;
@@ -536,6 +649,7 @@ header h1 {
         <a href="product-details-plant.php">อาหารเสริมสำหรับพืช</a>
         <a href="product-details-livestock.php">อาหารเสริมสำหรับสัตว์บก</a>
         <a href="cart.php">ตะกร้าสินค้า</a>
+        <a href="checkout.php">ชำระเงิน</a>
     </div>
 
         </div>
